@@ -13,24 +13,24 @@
             box-sizing: border-box;
             font-family: 'Inter', sans-serif;
         }
-        
+
         body {
             background-color: #f7f7f7;
             color: #212529;
             line-height: 1.6;
         }
-        
+
         a {
             text-decoration: none;
             color: #1c6ecc;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        
+
         /* Header Styles */
         header {
             background-color: #1c6ecc;
@@ -41,13 +41,13 @@
             z-index: 100;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        
+
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
             display: flex;
             align-items: center;
@@ -55,7 +55,7 @@
             font-weight: 700;
             font-size: 22px;
         }
-        
+
         .logo-icon {
             width: 32px;
             height: 32px;
@@ -66,29 +66,29 @@
             justify-content: center;
             color: #1c6ecc;
         }
-        
+
         nav ul {
             display: flex;
             list-style: none;
             gap: 24px;
         }
-        
+
         nav a {
             color: white;
             font-weight: 500;
             padding: 8px 0;
             transition: opacity 0.2s;
         }
-        
+
         nav a:hover {
             opacity: 0.9;
         }
-        
+
         .auth-buttons {
             display: flex;
             gap: 12px;
         }
-        
+
         .btn {
             padding: 8px 16px;
             border-radius: 4px;
@@ -96,19 +96,19 @@
             cursor: pointer;
             transition: all 0.2s;
         }
-        
+
         .btn-outline {
             border: 1px solid white;
             background: transparent;
             color: white;
         }
-        
+
         .btn-filled {
             background: white;
             color: #1c6ecc;
             border: none;
         }
-        
+
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #1c6ecc 0%, #0d4a9e 100%);
@@ -116,54 +116,67 @@
             padding: 60px 0;
             text-align: center;
         }
-        
+
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .hero h1 {
             font-size: 48px;
             margin-bottom: 20px;
             font-weight: 700;
         }
-        
+
         .hero p {
             font-size: 20px;
             margin-bottom: 30px;
             opacity: 0.9;
         }
-        
+
         .hero-buttons {
             display: flex;
             gap: 16px;
             justify-content: center;
             margin-top: 30px;
         }
-        
+
         .btn-large {
             padding: 12px 24px;
             font-size: 18px;
         }
-        
+
+        /* New Image Section */
+        .hero-image {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .hero-image img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
         /* Courses Section */
         .courses {
             padding: 60px 0;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 40px;
             font-size: 32px;
             color: #212529;
         }
-        
+
         .course-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 24px;
         }
-        
+
         .course-card {
             background: white;
             border-radius: 8px;
@@ -171,12 +184,12 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        
+
         .course-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 8px 15px rgba(0,0,0,0.1);
         }
-        
+
         .course-image {
             height: 160px;
             background-color: #e6f0fa;
@@ -186,101 +199,101 @@
             color: #1c6ecc;
             font-size: 48px;
         }
-        
+
         .course-content {
             padding: 20px;
         }
-        
+
         .course-title {
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 8px;
             color: #212529;
         }
-        
+
         .course-desc {
             color: #6c757d;
             font-size: 14px;
             margin-bottom: 16px;
         }
-        
+
         .course-meta {
             display: flex;
             justify-content: space-between;
             color: #6c757d;
             font-size: 14px;
         }
-        
+
         /* Features Section */
         .features {
             background-color: white;
             padding: 60px 0;
         }
-        
+
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        
+
         .feature-card {
             text-align: center;
             padding: 30px 20px;
         }
-        
+
         .feature-icon {
             font-size: 48px;
             color: #1c6ecc;
             margin-bottom: 20px;
         }
-        
+
         .feature-title {
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 12px;
         }
-        
+
         .feature-desc {
             color: #6c757d;
         }
-        
+
         /* Footer */
         footer {
             background-color: #212529;
             color: white;
             padding: 60px 0 30px;
         }
-        
+
         .footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
             margin-bottom: 40px;
         }
-        
+
         .footer-column h3 {
             font-size: 18px;
             margin-bottom: 20px;
             color: #fff;
         }
-        
+
         .footer-links {
             list-style: none;
         }
-        
+
         .footer-links li {
             margin-bottom: 10px;
         }
-        
+
         .footer-links a {
             color: #adb5bd;
             transition: color 0.2s;
         }
-        
+
         .footer-links a:hover {
             color: white;
         }
-        
+
         .footer-bottom {
             text-align: center;
             padding-top: 30px;
@@ -288,38 +301,38 @@
             color: #adb5bd;
             font-size: 14px;
         }
-        
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 36px;
             }
-            
+
             .hero p {
                 font-size: 18px;
             }
-            
+
             .hero-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             nav ul {
                 gap: 16px;
             }
         }
-        
+
         @media (max-width: 576px) {
             .header-container {
                 flex-direction: column;
                 gap: 15px;
             }
-            
+
             nav ul {
                 justify-content: center;
                 flex-wrap: wrap;
             }
-            
+
             .auth-buttons {
                 justify-content: center;
             }
@@ -336,7 +349,7 @@
                 </div>
                 <span>Khan Academy</span>
             </div>
-            
+
             <nav>
                 <ul>
                     <li><a href="#">Courses</a></li>
@@ -345,7 +358,7 @@
                     <li><a href="#">Parents</a></li>
                 </ul>
             </nav>
-            
+
             <div class="auth-buttons">
                 <button class="btn btn-outline" onclick="redirectToMain()">Log in</button>
                 <button class="btn btn-filled" onclick="redirectToMain()">Sign up</button>
@@ -362,6 +375,10 @@
                 <button class="btn btn-filled btn-large">Learners</button>
                 <button class="btn btn-outline btn-large">Teachers</button>
                 <button class="btn btn-outline btn-large">Parents</button>
+            </div>
+            <!-- New Image Section -->
+            <div class="hero-image">
+                <img src="file-FEpLonwwzLvFaipV12vHh8.png" alt="Hero Image">
             </div>
         </div>
     </section>
@@ -385,7 +402,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Course 2 -->
                 <div class="course-card">
                     <div class="course-image">
@@ -400,7 +417,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Course 3 -->
                 <div class="course-card">
                     <div class="course-image">
@@ -432,7 +449,7 @@
                     <h3 class="feature-title">Personalized learning</h3>
                     <p class="feature-desc">Students practice at their own pace, first filling in gaps in their understanding and then accelerating their learning.</p>
                 </div>
-                
+
                 <!-- Feature 2 -->
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -441,7 +458,7 @@
                     <h3 class="feature-title">Trusted content</h3>
                     <p class="feature-desc">Created by experts, Khan Academy's library of trusted practice and lessons covers math, science, and more.</p>
                 </div>
-                
+
                 <!-- Feature 3 -->
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -468,7 +485,7 @@
                         <li><a href="#">Our Supporters</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Column 2 -->
                 <div class="footer-column">
                     <h3>Resources</h3>
@@ -479,7 +496,7 @@
                         <li><a href="#">Community</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Column 3 -->
                 <div class="footer-column">
                     <h3>Subjects</h3>
@@ -490,7 +507,7 @@
                         <li><a href="#">Computing</a></li>
                     </ul>
                 </div>
-                
+
                 <!-- Column 4 -->
                 <div class="footer-column">
                     <h3>Connect</h3>
@@ -502,7 +519,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2023 Khan Academy. All rights reserved.</p>
             </div>
@@ -514,21 +531,6 @@
         function redirectToMain() {
             window.location.href = 'main.html';
         }
-        
-        // Simple JavaScript for button interactions
-        document.addEventListener('DOMContentLoaded', function() {
-            const buttons = document.querySelectorAll('.btn');
-            
-            buttons.forEach(button => {
-                button.addEventListener('click', function() {
-                    if (!this.classList.contains('btn-outline') && !this.classList.contains('btn-filled')) {
-                        // Do nothing for non-login/signup buttons
-                    }
-                });
-            });
-            
-            // Course cards are now non-clickable (no event handlers)
-        });
     </script>
 </body>
 </html>
