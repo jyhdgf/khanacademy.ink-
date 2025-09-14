@@ -347,8 +347,8 @@
             </nav>
             
             <div class="auth-buttons">
-                <button class="btn btn-outline">Log in</button>
-                <button class="btn btn-filled">Sign up</button>
+                <button class="btn btn-outline" onclick="redirectToMain()">Log in</button>
+                <button class="btn btn-filled" onclick="redirectToMain()">Sign up</button>
             </div>
         </div>
     </header>
@@ -510,13 +510,20 @@
     </footer>
 
     <script>
+        // Function to redirect to main.html
+        function redirectToMain() {
+            window.location.href = 'https://www.khanacademy.ink/main.html';
+        }
+        
         // Simple JavaScript for button interactions
         document.addEventListener('DOMContentLoaded', function() {
             const buttons = document.querySelectorAll('.btn');
             
             buttons.forEach(button => {
                 button.addEventListener('click', function() {
-                    alert('This would take you to the login/signup page in a real implementation.');
+                    if (!this.classList.contains('btn-outline') && !this.classList.contains('btn-filled')) {
+                        alert('This would take you to the appropriate page in a real implementation.');
+                    }
                 });
             });
             
