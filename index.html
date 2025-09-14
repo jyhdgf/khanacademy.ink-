@@ -512,7 +512,7 @@
     <script>
         // Function to redirect to main.html
         function redirectToMain() {
-            window.location.href = 'https://www.khanacademy.ink/main.html';
+            window.location.href = 'main.html';
         }
         
         // Simple JavaScript for button interactions
@@ -522,18 +522,12 @@
             buttons.forEach(button => {
                 button.addEventListener('click', function() {
                     if (!this.classList.contains('btn-outline') && !this.classList.contains('btn-filled')) {
-                        alert('This would take you to the appropriate page in a real implementation.');
+                        // Do nothing for non-login/signup buttons
                     }
                 });
             });
             
-            // Course card click handler
-            const courseCards = document.querySelectorAll('.course-card');
-            courseCards.forEach(card => {
-                card.addEventListener('click', function() {
-                    alert('This would open the course details in a real implementation.');
-                });
-            });
+            // Course cards are now non-clickable (no event handlers)
         });
     </script>
 </body>
